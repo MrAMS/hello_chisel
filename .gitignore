@@ -346,3 +346,6 @@ hs_err_pid*
 
 # Bear
 compile_commands.json
+
+# generated
+/generated/
