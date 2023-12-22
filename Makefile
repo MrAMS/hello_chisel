@@ -5,8 +5,6 @@ INC_PATH += /usr/include/c++/11
 VERILATOR = verilator
 VERILATOR_CFLAGS += -MMD --build -cc  \
 				-O3 --x-assign fast --x-initial fast --noassert
-NVBOARD_HOME = /home/santiego/proj/ysyx/ysyx-workbench/nvboard
-
 
 BUILD_DIR = ./build
 OBJ_DIR = $(BUILD_DIR)/obj_dir
