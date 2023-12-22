@@ -37,7 +37,6 @@ CFLAGS += $(INCFLAGS) -DTOP_NAME="\"$(NAME)\""
 LDFLAGS += -lSDL2 -lSDL2_image
 
 $(SVSRC): $(SSRCS)
-	# sbt "runMain $(NAME)"
 	mill $(NAME)
 
 $(BIN): $(SVSRC) $(CSRCS) $(NVBOARD_ARCHIVE)
@@ -48,7 +47,6 @@ $(BIN): $(SVSRC) $(CSRCS) $(NVBOARD_ARCHIVE)
 		--Mdir $(OBJ_DIR) --exe -o $(abspath $(BIN))
 
 test:
-	# sbt "testOnly $(NAME)Test"
 	mill $(NAME).test
 
 all: default
