@@ -13,7 +13,7 @@ class HelloTest extends AnyFlatSpec with ChiselScalatestTester {
         dut.io.segr(i).expect("b00000010".U(8.W))
       }
       for( i <- 4 until 8){
-        dut.io.segr(i).expect("hFF".U(8.W))
+        dut.io.segr(i).expect("b00000010".U(8.W))
       }
       /* TEST FOR INPUT 3 */
       dut.io.sw.poke(3.U(16.W))
@@ -23,7 +23,7 @@ class HelloTest extends AnyFlatSpec with ChiselScalatestTester {
         dut.io.segr(i).expect("b00000010".U(8.W))
       }
       for( i <- 4 until 8){
-        dut.io.segr(i).expect("hFF".U(8.W))
+        dut.io.segr(i).expect("b00000010".U(8.W))
       }
       /* MORE TEST ... */
     }
